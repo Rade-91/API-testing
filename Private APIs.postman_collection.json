@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "0659fc29-5158-4c9b-ad86-e8939766f9eb",
+		"name": "Private APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26276213"
+	},
+	"item": [
+		{
+			"name": "Create a new crocodile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Gencho\",\r\n    \r\n    \"sex\":\"M\",\r\n    \r\n    \"date_of_birth\":\"1991-06-06\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-api.k6.io/my/crocodiles/",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"my",
+						"crocodiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "another crocodile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pencho\",\r\n    \r\n    \"sex\": \"M\",\r\n    \r\n    \"date_of_birth\":\"1992-07-07\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-api.k6.io/my/crocodiles/",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"my",
+						"crocodiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "more crocodiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Trencho\",\r\n    \r\n    \"sex\":\"M\",\r\n    \r\n    \"date_of_birth\":\"1993-08-08\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-api.k6.io/my/crocodiles/",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"my",
+						"crocodiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list all your crocdiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://test-api.k6.io/my/crocodiles/",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"my",
+						"crocodiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a single croc id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://test-api.k6.io/my/crocodiles/12282301",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"my",
+						"crocodiles",
+						"12282301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update your crocodile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 12282305,\r\n    \"name\": \"Trencho\",\r\n    \"sex\": \"M\",\r\n    \"date_of_birth\": \"2003-08-08\",\r\n    \"age\": 19\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-api.k6.io/my/crocodiles/12282305",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"my",
+						"crocodiles",
+						"12282305"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

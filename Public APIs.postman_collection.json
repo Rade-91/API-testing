@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "65dd5e52-f751-49e9-a53a-5640aa9ac98e",
+		"name": "Public APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26276213"
+	},
+	"item": [
+		{
+			"name": "https://test-api.k6.io/public/crocodiles/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://test-api.k6.io/public/crocodiles/",
+					"protocol": "https",
+					"host": [
+						"test-api",
+						"k6",
+						"io"
+					],
+					"path": [
+						"public",
+						"crocodiles",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
